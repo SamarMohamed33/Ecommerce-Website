@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Shopbagz - Bags</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <i
+          class="fa-solid fa-bars fa-2x sidenav-icon"
+          style="cursor: pointer"
+          onclick="openNav()"
+        >
+        </i>
+        <h1 class="logo">SHOPBAGZ</h1>
+        <div class="nav-links">
+          <a href="index.html">HOME</a>
+          <a
+            href="bags.html"
+            style="background-color: #d6aeaf; border-radius: 10px"
+            >BAGS</a
+          >
+          <a href="aboutus.html">ABOUT US</a>
+          <a href="#contact-us">CONTACT US</a>
+          <a href="storelocations.html">STORES LOCATION</a>
+        </div>
+        <div class="nav-icons">
+          <i
+            class="fa-solid fa-magnifying-glass fa-2x"
+            style="color: #111; cursor: pointer"
+          ></i>
+          <i
+            class="fa-solid fa-user fa-2x"
+            style="color: #111; cursor: pointer"
+          ></i>
+          <i
+            class="fa-solid fa-bag-shopping fa-2x"
+            style="color: #111; cursor: pointer"
+          ></i>
+        </div>
+      </nav>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="index.html">HOME</a>
+        <a href="bags.html">BAGS</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="#contact-us">CONTACT US</a>
+        <a href="storelocations.html">STORES LOCATION</a>
+      </div>
+      <div class="header-wrapper">
+        <div class="follow-links">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+        <div class="h-c-wrapper">
+          <div class="header-content">
+            <h1>DESIGNED FOR YOUR UNIQUENESS</h1>
+            <p>The Top Bag Trends For Summer 2022</p>
+            <a href="bags.html">Shop Now</a>
+          </div>
+          <div class="header-img">
+            <img
+              src="Images/background/irene-kredenets-tcVH_BwHtrc-unsplash__2_-removebg-preview.png"
+              class=""
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="navigation">
+      <a href="index.html">Home</a>
+      <span>></span>
+      <a href="bags.html">Bags</a>
+    </div>
+    <div class="container">
+      <button id="open-filter" onclick="openFilter()">FILTER</button>
+      <div class="filter" id="filter">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeFilter()"
+          >&times;</a
+        >
+        <div class="filter-type" id="type-id">
+          <h3>Type</h3>
+          <div class="myback">
+            <input
+              type="checkbox"
+              id="backpack"
+              name="type"
+              value="backpack"
+              class="bigger"
+            />
+            <label for="backpack">Backpack</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="crossbody"
+              name="type"
+              value="crossbody"
+              class="bigger"
+            />
+            <label for="crossbody">Crossbody</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="small-wallet"
+              name="type"
+              value="small-wallet"
+              class="bigger"
+            />
+            <label for="small-wallet">Small Wallet</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="waist"
+              name="type"
+              value="waist-bag"
+              class="bigger"
+            />
+            <label for="waist">Waist Bag</label>
+          </div>
+        </div>
+        <div class="filter-price" id="price-id">
+          <h3>Price</h3>
+          <div>
+            <input type="checkbox" id="cheap" name="price" class="bigger" />
+            <label for="cheap">500 to 1000 EGP</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="average-price"
+              name="price"
+              class="bigger"
+            />
+            <label for="average-price">1000 to 1500 EGP</label>
+          </div>
+          <div>
+            <input type="checkbox" id="expensive" name="price" class="bigger" />
+            <label for="expensive">1500 EGP & above</label>
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <div class="bags">
+          <div class="item backpack">
+            <img
+              src="Images/Backpack/Double Buckle Decor Flap Backpack/1652082399936475a353c58b4af66f2214cb565ae5_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Blacksy</a>
+              <p>EGP1,245</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item crossbody">
+            <img
+              src="Images/Crossbody/Mini Color Block Crossbody Bag/162253261766beea15d383124f976c24979a27cf9f_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Mini Color</a>
+              <p>EGP900</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item waist-bag">
+            <img
+              src="Images/Waist Bag/Chain Decor Fanny Pack/16581236163070ce481bf2e77ad7bc2c3debb35033_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Chain Decor</a>
+              <p>EGP1,900</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item small-wallet">
+            <img
+              src="Images/small wallet/Heart Zipper Snap Button Small Wallet/1656995729a11d086303887eb1f4e70789b196f61c_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Brinny</a>
+              <p>EGP700</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item crossbody">
+            <img
+              src="Images/Crossbody/Snakeskin Edge Flap Crossbody Bag/16272669240b30bad8f7feb7f6afa0527d874b04d7_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Snakeskin Edge</a>
+              <p>EGP600</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item backpack">
+            <img
+              src="Images/Backpack/Croc Embossed Backpack/15996216379c9569f727913a8b17ae49116869e57b_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Croc Embossed Backpack</a>
+              <p>EGP1,245</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item waist-bag">
+            <img
+              src="Images/Waist Bag/Color Block Tassel Decor Fanny Pack/16539610813df43da4a621eba9e86978e83ed2f43a_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Raelynn</a>
+              <p>EGP1,600</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item backpack">
+            <img
+              src="Images/Backpack/Minimalist Zip Front Functional Backpack/1648608806fd7dda2f36aa424caba8a76ac9025df7_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Avis</a>
+              <p>EGP1,300</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item waist-bag">
+            <img
+              src="Images/Waist Bag/Double Pocket Leopard Pattern Fanny Pack/1627303837880025b8a3e88c4a1fc0be8cd280eb5d_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Leopard Pattern</a>
+              <p>EGP750</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item small-wallet">
+            <img
+              src="Images/small wallet/Disc Decor Small Wallet With Wristlet/1657776913dc1ca06435d6a6ec608e59d87e81eec4_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Maude</a>
+              <p>EGP2,000</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item crossbody">
+            <img
+              src="Images/Crossbody/Argyle Quilted Heart Lock Flap Chain Square Bag/165890873781f9b9128ab23964a66fbc54ca36190a_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">ICE CLUB</a>
+              <p>EGP1,100</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item small-wallet">
+            <img
+              src="Images/small wallet/Letter Graphic Stitch Detail Small Wallet/165569753471a04532ead44ec06c1b3b953b16da3f_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Carter</a>
+              <p>EGP800</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item backpack">
+            <img
+              src="Images/Backpack/Buckle Decor Flap Straw Backpack/1651110304c036e6120e48797b2f64b52c800cdff6_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Quartz</a>
+              <p>EGP1,350</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item waist-bag">
+            <img
+              src="Images//Waist Bag/Houndstooth Graphic Chain Decor Fanny Pack/1635329781406740156fd299cb0b246c4ed6a3fe8b_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Jules</a>
+              <p>EGP1,450</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item small-wallet">
+            <img
+              src="Images/small wallet/Geometric Graphic Small Wallet/1644919401738506a3f5f170e0786a28fee8a16a1a_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Geometric Graphic</a>
+              <p>EGP1,200</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item crossbody">
+            <img
+              src="Images/Crossbody/Mini Letter Graphic Faux Pearl Strap Crossbody Bag/163046043237e0f78c8fe670ad083773602c0b9e16_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Effortless White</a>
+              <p>EGP600</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item backpack">
+            <img
+              src="Images/Backpack/Minimalist Buckle Quilted Flap Backpack/163947344240cc1370fb22c138dc5985a703569c10_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Pop Paige</a>
+              <p>EGP2,500</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item crossbody">
+            <img
+              src="Images/Crossbody/Mini Colorblock Plaid Flap Square Bag/1644907521a974ea3f7887ecc1afd73316a3560faf_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Liliana</a>
+              <p>EGP850</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item waist-bag">
+            <img
+              src="Images/Waist Bag/Double Zipper Fanny Pack/1655261983865d611922b75de44e9090c8c8064d22_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Lilo</a>
+              <p>EGP1,175</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item small-wallet">
+            <img
+              src="Images/small wallet/Lychee Pattern Purse/1648605615453654a81eb2330a01ddb90f73249c43_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Lychee Pattern</a>
+              <p>EGP1,650</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item backpack">
+            <img
+              src="Images/Backpack/Minimalist Textured Classic Backpack/16528613712594805d1e38179113a5907851d4c68a_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Coffee</a>
+              <p>EGP670</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item crossbody">
+            <img
+              src="Images/Crossbody/Mini Quilted Pattern Flap Square Bag/1646725155d8b2482b597de751c7840d08c92f2715_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Dejavu</a>
+              <p>EGP550</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item waist-bag">
+            <img
+              src="Images/Waist Bag/Mini Crocodile Embossed Chain Decor Waist Bag/1644803216a010a763e2790fad5350a2f651085a95_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Oatmeal</a>
+              <p>EGP1,600</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item small-wallet">
+            <img
+              src="Images/small wallet/Minimalist Heart Graphic Small Wallet/16517338638360b151754256b44ddd220913b35b25_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Heart Graphic</a>
+              <p>EGP1,560</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item backpack">
+            <img
+              src="Images/Backpack/Push Lock Chain Decor Argyle Quilted Flap Backpack/1655444852b8b7b3d5e8aac4683d115b5773f70ab0_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Peek bag</a>
+              <p>EGP1,245</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item crossbody">
+            <img
+              src="Images/Crossbody/Mini Tweed Flap Crossbody Chain Bag/1659001293462a4a4aabdd735adbd7b17bb36a0f2d_thumbnail_600x.webp "
+            />
+            <div class="info">
+              <a href="#">Mini Tweed Flap</a>
+              <p>EGP1,330</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item waist-bag">
+            <img
+              src="Images/Waist Bag/Minimalist Quilted Fanny Pack/1632650099ffb2db99ec770e5f81cd4a643e47bd46_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Forever Young</a>
+              <p>EGP880</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item small-wallet">
+            <img
+              src="Images/small wallet/Minimalist Small Wallet/1634002095159ea91b2fc62581608063364eeef7ce_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Cashmere Elegance</a>
+              <p>EGP1,245</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item backpack">
+            <img
+              src="Images/Backpack/Tassel Decor Geometric Graphic Flap Backpack/16387719944b8f9b6ed68e68b89baf7f81b46aaa24_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Idol bag</a>
+              <p>EGP1,345</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item crossbody">
+            <img
+              src="Images/Crossbody/Mini Two Tone Flap Square Bag/164542344692bb270517bfdc7b8ef24968a39225b0_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Glitter</a>
+              <p>EGP1,650</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item waist-bag">
+            <img
+              src="Images/Waist Bag/Quilted Chain Decor Fanny Pack/1649733587e40935f5d9009fbb531aed8107ec2a41_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">snow</a>
+              <p>EGP660</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="item small-wallet">
+            <img
+              src="Images/small wallet/Two Tone Buckle Decor Small Wallet/16600174689e68a1a243a753c36444a96caeea2915_thumbnail_600x.webp"
+            />
+            <div class="info">
+              <a href="#">Two Tone Buckle</a>
+              <p>EGP1,445</p>
+              <button class="cart-btn">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+        <button id="load-more" onclick="myFunction">Load More</button>
+      </section>
+    </div>
+    <footer>
+      <div class="footer-wrap">
+        <div class="contact-us" id="contact-us">
+          <h3>CONTACT US</h3>
+          <p>El-Nasr Street, El-Basatin Sharkeya, Maadi, Cairo Governorate</p>
+          <p>
+            2 Wady El Nile Street, Corner of Gameat El Dowal El Arabia Street،
+            Giza Governorate
+          </p>
+          <p>
+            <span style="font-weight: bold">Phone:</span>
+            01129324699
+          </p>
+          <p><span style="font-weight: bold">Email: </span>info@gmail.com</p>
+        </div>
+        <div class="follow-us">
+          <h3>FOLLOW US</h3>
+          <div>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
