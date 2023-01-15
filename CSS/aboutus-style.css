@@ -1,0 +1,33 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  aspect-ratio: 16/5;
+}
+section div {
+  width: 75%;
+  margin: auto;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 80%);
+}
+.navigation {
+  width: 75%;
+}
+@media screen and (max-width: 1250px) {
+  section {
+    height: auto;
+    margin-top: 100px;
+  }
+  section div,
+  .navigation {
+    width: 90%;
+  }
+  .footer-wrap {
+    flex-direction: column;
+  }
+}
